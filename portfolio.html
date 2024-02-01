@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="biodata.css">
+    <script src="https://kit.fontawesome.com/e89c983654.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="header-text">
+        <p style="color:#ff004f">Welcome!</p>
+        <h1>Hi,<br> I'm <span>Muskan</span></h1>
+    </div>
+   </div>
+   <!-------about-------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a second year Computer Science and engineering student pursuing my Bachelor's Degree in Technology from Vellore Institute of TechnologyI have cultivated a robust foundation in web development and a keen interest in the dynamic field of UI/UX design, My academic journey has equipped me with a comprehensive understanding of Computer science principles, coupled with hands-on experience in Crafting efficient and user-friendly web solutions, I am passionate about creating seamless user experiences and am committed to expanding my expertise in UI/UX design to contribute meaningfully to innovative projects and technological advancements</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+                <p class="tab-links" onclick="opentab('education')">Eductaion</p>
+
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Coding Language</span><br>Java,Python,C,C++</li>
+                    <li><span>Web Developement</span><br>HTML,CSS,JavaScript</li>
+                    <li><span>Others</span><br>DBMS,MySQL,Reactjs </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certificate">
+                <ul>
+                    <li><span>HTML</span><br>HTML certification from Linkedln</li>
+                    <li><span>Public Speaking</span><br>public speaking from nptel</li>
+                    <li><span>German</span><br>German Completion Certification from Linkedln</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Vellore Institute of Technology</span><br>BTech in Computer Science</li>
+                    <li><span>Jamshedpur Public School</span><br>PCM with computer</li>
+                  
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--services-->
+   <div id="services">
+    <div class="container">
+       <h1 class="sub-title">My Projects</h1>
+       <div class="services-list">
+        <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Portfolio</h2>
+            <p>The create a simple personal portfolio webpage . It includes sections for a header with navigation, an about me section with tabs for skills, experience, and education, a projects/services section, and a contact section with social media links. The CSS styles define the layout, colors, and animations, providing a clean and visually appealing design. The webpage uses Font Awesome for icons and is responsive, adapting to different screen sizes. Additionally, the navigation features a smooth scroll effect.</p>
+            
+        </div>
+        <div>
+            <i class="fas fa-code"></i>
+            <h2>Form</h2>
+            <p>Created and Html form with basic validation using HTML and CSS.It includes input fields for user contact information and implements client side validation for improved user experience. Applied CSS for styling and layout.Ensure accurate data submission through validation</p>
+            
+        </div>
+        <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Others</h2>
+            <p>Published a research paper on growing technology</p>
+            <p>i have made an AI/ML model which can differetiate between different animals</p>
+            
+        </div>
+        
+       </div>
+    </div>
+   </div>
+<!-------contact-------->
+<div id="contact">
+   <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p><i class="fas fa-paper-plane"></i>muskan.agarwal2022@vitstudent.ac.in</p>
+            <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/muskanagarwal230?igsh=MWR1bnA4ZGYwaHc0bQ=="> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/muskan-agarwal-635923226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Muskan350"> <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="contact-right"></div>
+    </div>
+   </div>
+</div>
+
+   <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+   </script>
+</body>
+</html>
